@@ -16,10 +16,12 @@
    ```sh
    apt-get install expect -y
    ```
+## 필수 준비
+- **필수 셋팅**: `system_download.txt 파일 /data/work 하위에 위치 필수!!!!`
 
 ## 참조 파일
 
-- **셋업 참조 파일**: `system_download.txt`
+- **셋업 참조 파일**: `system_download.txt(/data/work 하위에 위치 필수!!!!)`
 - **전체 파이프라인 스크립트**: `ssh_keygen_auto_proc.sh`
 
 ## 파이프라인 세부 설명
