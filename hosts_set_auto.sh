@@ -23,7 +23,7 @@ expect eof
 
     cleaned_ip_host=$(echo -e ${current_ip} ${etc_host_name} | sed 's/\r//g')
     echo ${cleaned_ip_host} >> /etc/hosts
-    sleep 2
+    sleep 4
 done
 echo "127.0.0.1 localhost" >> /etc/hosts
 
