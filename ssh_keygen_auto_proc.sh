@@ -1,11 +1,6 @@
 #!/usr/bin/bash
 
-# 인자 개수 확인
-if [ "$#" -ne 1 ]; then
-    echo "Usage: $0 <dir_path>"
-    exit 1
-fi
-dir_path=$1
+dir_path=$(dirname $(realpath $0))
 
 echo "[`date`] Time_Stamp : ssh-keygen auto Start...."
 
