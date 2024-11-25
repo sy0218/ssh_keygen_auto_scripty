@@ -1,6 +1,18 @@
 #!/usr/bin/bash
 
+# 인자가 하나가 아닌 경우 스크립트 종료
+if [ "$#" -ne 1 ]; then
+    echo "$0 [root_passwd]"
+    exit 1
+fi
+
+
+my_passwd=$1
 dir_path=$(dirname $(realpath $0))
+
+
+# 각 하위 스크립트에 환경 변수 전달
+export my_passwd
 
 echo "[`date`] Time_Stamp : ssh-keygen auto Start...."
 

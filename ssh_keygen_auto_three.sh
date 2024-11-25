@@ -25,7 +25,7 @@ do
                 exp_continue
         }
         "*assword:" {
-                send "nds1101\r"
+                send "${my_passwd}\r"
                 exp_continue
         }
         "*Overwrite*" {
@@ -46,7 +46,7 @@ EOD
                 exp_continue
         }
         "*assword:" {
-                send "nds1101\r"
+                send "${my_passwd}\r"
                 exp_continue
         }
         "*Overwrite*" {

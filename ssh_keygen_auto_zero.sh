@@ -19,7 +19,7 @@ sudo /usr/bin/expect << EOD
                 exp_continue
         }
         "*assword:" {
-                send "nds1101\r"
+                send "${my_passwd}\r"
                 exp_continue
         }
         eof
@@ -36,7 +36,7 @@ sudo /usr/bin/expect << EOD
                 exp_continue
         }
         "*assword:" {
-                send "nds1101\r"
+                send "${my_passwd}\r"
                 exp_continue
         }
         eof

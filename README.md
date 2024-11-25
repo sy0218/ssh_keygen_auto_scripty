@@ -37,7 +37,7 @@
 
 1. `ssh_keygen_auto_proc.sh` 스크립트를 실행하여 전체 파이프라인을 시작합니다.
    ```sh
-   ./ssh_keygen_auto_proc.sh
+   ./ssh_keygen_auto_proc.sh [설정한 passwd]
    ```
 
 ## 파일 구조

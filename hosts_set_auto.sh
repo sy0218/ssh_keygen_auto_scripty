@@ -17,7 +17,7 @@ for ((i=0; i<len_array; i++)); do
 etc_host_name=$(expect -c "
 spawn ssh ${current_ip} \"hostname\"
 expect \"*password*\"
-send \"nds1101\r\"
+send \"${my_passwd}\r\"
 expect eof
 " | tail -n 1)
 
@@ -35,7 +35,7 @@ for ((si=1; si<len_array; si++)); do
         sudo /usr/bin/expect << EOD
         spawn scp /etc/hosts ${ssh_ip}:/etc/hosts
         expect "*password*"
-        send "nds1101\r"
+        send "${my_passwd}\r"
         sleep 2
 expect eof
 EOD
